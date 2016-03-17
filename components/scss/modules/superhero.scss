@@ -1,0 +1,42 @@
+/*
+  ____  _   _ ____  _____ ____  _   _ _____ ____   ___
+ / ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \
+ \___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | |
+  ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
+ |____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/
+
+*/
+
+/* ==========================================================================
+   Styling for Superheros
+   ==========================================================================
+*/
+
+.login-container{
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/login_bg.jpg");
+	background-size: cover;
+
+	#regis-brand {
+		padding: 20px 0px 20px 40px;
+		background-color: green;
+
+		img {
+
+		}
+	}
+
+	.regis-content-1 {
+		background-color: red;
+	}
+
+	.regis-content-2 {
+		background-color: blue;
+	}
+
+	.regis-content-3 {
+		background-color: yellow;
+	}
+}

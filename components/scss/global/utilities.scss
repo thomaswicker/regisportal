@@ -1,0 +1,318 @@
+@import '../global/vars';
+@import '../global/mixins';
+
+/*
+  _   _ _____ ___ _     ___ _______   __   ____ _        _    ____ ____  _____ ____  
+ | | | |_   _|_ _| |   |_ _|_   _\ \ / /  / ___| |      / \  / ___/ ___|| ____/ ___| 
+ | | | | | |  | || |    | |  | |  \ V /  | |   | |     / _ \ \___ \___ \|  _| \___ \ 
+ | |_| | | |  | || |___ | |  | |   | |   | |___| |___ / ___ \ ___) |__) | |___ ___) |
+  \___/  |_| |___|_____|___| |_|   |_|    \____|_____/_/   \_\____/____/|_____|____/ 
+                                                                                     
+*/
+
+/* ==========================================================================
+   Utility classes for borders, padding, margin, etc.
+   ==========================================================================
+*/
+
+.border { 
+  /* border positions */
+  
+  &.top {
+    border-top-style: solid;
+  }
+
+  &.right {
+    border-right-style: solid;
+  }
+
+  &.bottom {
+    border-bottom-style: solid;
+    margin-bottom: 1rem;
+  }
+
+  &.left {
+    border-left-style: solid;
+  }
+
+  /* border thicknesses */
+
+  &.none {
+    border-width: 0px;
+  }
+  &.xsmall {
+    border-width: 1px;
+  }
+  &.small {
+    border-width: 2px;
+  }
+  &.medium {
+    border-width: 3px;
+  }
+  &.large {
+    border-width: 4px;
+  }
+  &.xlarge {
+    border-width: 5px;
+  }
+
+  /* border colors */
+
+  &.dark {
+    border-color: $charcoal;
+  }
+
+  &.light {
+    border-color: #bbb;
+  }
+
+  &.xlight {
+    border-color: #ddd;
+  }
+}
+
+
+
+.bg-color {
+  /* background colors */
+
+  &.bg-dark {
+    background-color: $charcoal;
+  }
+
+  &.bg-medium {
+    background-color: #888;
+  }
+
+  &.bg-light {
+    background-color: #bbb;
+  }
+
+  &.bg-xlight {
+    background-color: #ddd;
+  }
+
+  &.bg-none {
+    background-color: transparent;
+  }
+
+  &.bg-white {
+    background-color: $white;
+  }
+}
+
+/* padding */
+
+.padding {
+
+  &.top {
+    &.xlarge { 
+      padding-top: 2rem; 
+    }
+    
+    &.large  { 
+      padding-top: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-top: 1rem; 
+    }
+    
+    &.small  { 
+      padding-top: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-top: .25rem;
+    }
+    
+    &.none   { 
+      padding-top: 0rem; 
+    }
+  }
+
+  &.right {
+    &.xlarge { 
+      padding-right: 2rem; 
+    }
+    
+    &.large  { 
+      padding-right: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-right: 1rem; 
+    }
+    
+    &.small  { 
+      padding-right: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-right: .25rem;
+    }
+    
+    &.none   { 
+      padding-right: 0rem; 
+    }
+  }
+
+  &.bottom {
+    &.xlarge { 
+      padding-bottom: 2rem; 
+    }
+    
+    &.large  { 
+      padding-bottom: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-bottom: 1rem; 
+    }
+    
+    &.small  { 
+      padding-bottom: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-bottom: .25rem;
+    }
+    
+    &.none   { 
+      padding-bottom: 0rem; 
+    }
+  }
+
+  &.left {
+    &.xlarge { 
+      padding-left: 2rem; 
+    }
+    
+    &.large  { 
+      padding-left: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-left: 1rem; 
+    }
+    
+    &.small  { 
+      padding-left: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-left: .25rem;
+    }
+    
+    &.none   { 
+      padding-left: 0rem; 
+    }
+  }
+}
+
+.margin {
+  &.top {
+    &.xlarge { 
+      padding-top: 2rem; 
+    }
+    
+    &.large  { 
+      padding-top: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-top: 1rem; 
+    }
+    
+    &.small  { 
+      padding-top: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-top: .25rem;
+    }
+    
+    &.none   { 
+      padding-top: 0rem; 
+    }
+  }
+
+  &.right {
+    &.xlarge { 
+      padding-right: 2rem; 
+    }
+    
+    &.large  { 
+      padding-right: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-right: 1rem; 
+    }
+    
+    &.small  { 
+      padding-right: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-right: .25rem;
+    }
+    
+    &.none   { 
+      padding-right: 0rem; 
+    }
+  }
+
+  &.bottom {
+    &.xlarge { 
+      padding-bottom: 2rem; 
+    }
+    
+    &.large  { 
+      padding-bottom: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-bottom: 1rem; 
+    }
+    
+    &.small  { 
+      padding-bottom: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-bottom: .25rem;
+    }
+    
+    &.none   { 
+      padding-bottom: 0rem; 
+    }
+  }
+
+  &.left {
+    &.xlarge { 
+      padding-left: 2rem; 
+    }
+    
+    &.large  { 
+      padding-left: 1.5rem; 
+    }
+    
+    &.medium { 
+      padding-left: 1rem; 
+    }
+    
+    &.small  { 
+      padding-left: .5rem;
+    }
+    
+    &.xsmall { 
+      padding-left: .25rem;
+    }
+    
+    &.none   { 
+      padding-left: 0rem; 
+    }
+  }
+}
+

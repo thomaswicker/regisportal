@@ -1,0 +1,20 @@
+!!!
+%html{:lang => "en"}
+	= Haml::Engine.new(File.read('components/views/partials/header.haml')).render
+
+	%body
+		.login-container
+			#regis-brand.medium-12.columns
+				%img{:src => "img/regis_logo_inverse.png", :alt => "Regis Company"}
+
+			.row
+				.medium-4.columns.regis-content-1
+					Test 1
+				.medium-4.columns.regis-content-2
+					Test 2
+				.medium-4.columns.regis-content-3
+					Test 3
+
+		.footer
+			= Haml::Engine.new(File.read('components/views/partials/footer.haml')).render
+

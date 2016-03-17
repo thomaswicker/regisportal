@@ -1,0 +1,46 @@
+/*
+  _   _ _____    _    ____ ___ _   _  ____ ____
+ | | | | ____|  / \  |  _ \_ _| \ | |/ ___/ ___|
+ | |_| |  _|   / _ \ | | | | ||  \| | |  _\___ \
+ |  _  | |___ / ___ \| |_| | || |\  | |_| |___) |
+ |_| |_|_____/_/   \_\____/___|_| \_|\____|____/
+
+*/
+
+h1, h2, h3, h4, h5 ,h6 {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: $font-1;
+  letter-spacing: normal;
+  color: $white;
+
+  &.border {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.3rem;
+    margin-bottom: .5rem;
+  }
+}
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}

@@ -1,0 +1,164 @@
+/*
+ __     ___    ____  ___    _    ____  _     _____ ____
+ \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
+  \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
+   \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
+    \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
+
+*/
+
+/* -------------------------- BEGIN COLOR VARIABLES -------------------------- */
+
+$blue: #42aae0;
+$blue2: #42aae0;
+$darkBlue: #14395d;
+$ultraLightGray: #ddd;
+$lightGray: #bbb;
+
+
+$dark-blue: #14395d;
+$ultra-light-gray: #ddd;
+$light-gray: #bbb;
+$charcoal: #3b3b3c;
+$black: #000000;
+$white: #FFFFFF;
+
+/* ==========================================================================
+   Global Color Palette
+   ==========================================================================
+*/
+
+$none:              transparent;
+$white:             #ffffff;
+$off-white:         #f4f4f4;
+$xlight-gray:       #dedede;
+$light-gray:        #bcbcbc;
+$medium-gray:       #777777;
+$dark-gray:         #444444;
+$black:             #000000;
+
+$red-potion:        #ff372c;
+$green-potion:      #9fde00;
+$blue-potion:       #42aae0;
+$orange-potion:     #f28f38;
+$yellow-potion:     #fff62e;
+$purple-potion:     #cabee6;
+
+$color-primary:     $blue-potion;
+$color-secondary:   #42aae0;
+
+// Element color styling variables
+$link:              $green-potion;
+
+
+
+/* ==========================================================================
+   Button Variables
+   ==========================================================================
+*/
+
+$button-primary: $color-primary;
+$button-secondary: $color-secondary;
+$button-red: $red-potion;
+$button-green: $green-potion;
+$button-gray: $xlight-gray;
+$button-blue: $blue-potion;
+$button-dark: $dark-gray;
+$button-orange: $orange-potion;
+$button-purple: $purple-potion;
+
+
+/* -------------------------- END COLOR VARIABLES -------------------------- */
+
+/* ==========================================================================
+   Typography Variables
+   ==========================================================================
+*/
+
+/* -------------------------- BEGIN FONT VARIABLES -------------------------- */
+
+$font-1-size: 2.2rem;
+
+// $font-1: 'Open Sans', sans-serif;
+$font-1: 'Lato', sans-serif;
+$font-2: Arial, Helvetica, sans-serif;
+$font-3: Arial, Helvetica, sans-serif;
+$font-4: Arial, Helvetica, sans-serif;
+
+/* Font Weights */
+
+$font-weight-xlight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-ultra: 800;
+
+/* Font Sizes */
+
+$font-size-tiny:    .85rem;
+$font-size-sm:   1.15rem;
+$font-size-md:  1.3rem;
+$font-size-lg:   1.7rem;
+$font-size-xl:  2.2rem;
+$font-size-jumbo:   3rem;
+
+$body-text: $font-1-size;
+$body-text-small: ($font-1-size *.9);
+$body-text-large: ($font-1-size *1.1);
+
+
+/* ==========================================================================
+   Headers h1,h2,h3,h4,h5,h6
+   ==========================================================================
+*/
+
+$h1-size: 2.2rem;
+$h2-size: 2rem;
+$h3-size: 1.6rem;
+$h4-size: 1.5rem;
+$h5-size: 1.4rem;
+$h6-size: 1.2rem;
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic,400italic,700,700italic,900);
+
+/* ==========================================================================
+   Form Variables
+   ==========================================================================
+*/
+
+$form-focus: #dddddd;
+
+
+
+/* ==========================================================================
+   Media Query Variables
+   ==========================================================================
+*/
+
+$sm-start:   0em;
+$sm-end:     40em;
+
+$md-start:  40.063em;
+$md-end:    64em;
+
+$lg-start:   64.063em;
+$lg-end:     90em;
+
+$xl-start:  90.063em;
+$xl-end:    124em;
+
+$jumbo-start:  124.063em;
+
+
+/* -------------------------- END FONT VARIABLES -------------------------- */
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+

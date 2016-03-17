@@ -1,0 +1,236 @@
+@import 'global/vars';
+@import 'global/mixins';
+
+/*
+  _   _    ___     ______    _    ____
+ | \ | |  / \ \   / / __ )  / \  |  _ \
+ |  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
+ | |\  |/ ___ \ V / | |_) / ___ \|  _ <
+ |_| \_/_/   \_\_/  |____/_/   \_\_| \_\
+
+*/
+
+.navbar-brand {
+  img {
+    width: 155px;
+    margin: .4rem 0rem 0rem 1rem;
+
+    @include mq (sm) {
+    	width: 135px;
+    	margin: .4rem 0rem 0rem .5rem;
+    }
+  }
+}
+
+.sticky {
+	z-index: 100000000000;
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+	.sticky {
+		position: static !important;
+	}
+
+	#rms-manuals-container #rms-manuals-right-alt {
+		position: absolute !important;
+		top: 0rem !important;
+
+		.web-manual-label {
+			display: none !important;
+		}
+	}
+}
+
+/* ========================================================
+   FOUNDATION OVERRIDES BELOW
+   ======================================================== */
+
+.top-bar {
+ 	float: left;
+	position: static !important;
+	width: 100% !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+	z-index: 10000000000000000 !important;
+
+	&.expanded {
+		min-height: 375px !important;
+	}
+}
+
+.nav-social-small {
+	a {
+		float: left;
+		width: 33.333% !important;
+
+		&:nth-child(1) {
+		}
+
+		&:nth-child(2) {
+		}
+
+		&:nth-child(3) {
+		}
+	}
+}
+
+.top-bar .title-area {
+ 	background: transparent !important;
+	z-index: 100000000000000001 !important;
+
+	@include mq(sm) {
+		background-color: rgba(0, 0, 0, .94) !important;
+	}
+}
+
+.top-bar-section {
+	background-color: rgba(0, 0, 0, .94) !important;
+	border-bottom: 2px solid $white;
+	z-index: 100000000;
+	min-height: 52px;
+
+	@include mq(sm) {
+		background-color: transparent !important;
+	}
+
+	.active {
+		background-color: $blue !important;
+		cursor: default !important;
+
+		&:hover {
+			background-color: $blue !important;
+			cursor: default !important;
+		}
+	}
+
+	ul li a {
+		font-size: .95rem !important;
+		font-family: $font-1 !important;
+		font-weight: 400 !important;
+		color: #bbb !important;
+ 		background: transparent !important;
+ 		padding-top: 4px !important;
+
+		&:hover {
+			background-color: #333 !important;
+			color: $white !important;
+		}
+
+		@include mq(sm) {
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+		 	padding-top: 0px !important;
+		  background: white !important;
+		 	color: #333 !important;
+		}
+	}
+
+	ul li.active a {
+		font-size: .95rem !important;
+		font-family: $font-1 !important;
+		font-weight: 500 !important;
+		color: $white !important;
+ 		background: transparent !important;
+
+		&:hover {
+ 			background: transparent !important;
+		}
+	}
+}
+
+.top-bar-section .has-dropdown {
+	a {
+		color: $black;
+	}
+
+	&.active {
+		background-color: $blue;
+		padding: 0rem 0rem .2rem 0rem;
+
+		a {
+
+			&::after {
+				color: $white !important;
+			}
+		}
+	}
+}
+
+.top-bar-section .has-dropdown>a:after {
+	margin-top: 2px !important;
+}
+
+.dropdown {
+	background-color: $white !important;
+	font-size: .9rem !important;
+	color: $black !important;
+}
+
+.dropdown li {
+	background-color: $white !important;
+	color: $black !important;
+}
+
+.dropdown li a {
+	display: block;
+	background-color: $white !important;
+	font-size: .9rem !important;
+	color: $black !important;
+	border-bottom: 1px solid #ddd;
+
+	&:hover {
+		background-color: #ccc !important;
+	}
+
+	&:nth-child() {
+		border-bottom: 0px;
+	}
+}
+
+.top-bar-section ul.dropdown li a {
+	background-color: $white !important;
+	font-size: .9rem !important;
+	color: $black !important;
+
+	&:hover {
+		background-color: #ddd !important;
+	}
+}
+
+.top-bar-section ul li>a {
+	@include mq(sm) {
+		padding: .3rem 0rem .3rem 0rem !important;
+	}
+}
+
+.top-bar-section ul li {
+	background-color: transparent !important;
+}
+
+.top-bar-section ul li.active a {
+	border-bottom: none;
+}
+
+.parent-link {
+
+	&.js-generated {
+		display: none !important;
+	}
+}
+
+@include mq (sm) {
+	.title {
+		&.back {
+			font-weight: bold !important;
+			text-transform: uppercase;
+			display: block !important;
+		}
+	}
+}
+
+

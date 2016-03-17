@@ -1,0 +1,50 @@
+/*
+  ____  _   _ _____ _____ ___  _   _ ____
+ | __ )| | | |_   _|_   _/ _ \| \ | / ___|
+ |  _ \| | | | | |   | || | | |  \| \___ \
+ | |_) | |_| | | |   | || |_| | |\  |___) |
+ |____/ \___/  |_|   |_| \___/|_| \_|____/
+
+*/
+
+/* ==========================================================================
+   Styling for Standard Buttons
+   ==========================================================================
+*/
+
+.btn, .button, button, {
+  min-width: 3rem;
+  padding: 1rem, 1.25rem, 1rem, 1.25rem;
+  border-radius: 0;
+  text-align: center;
+  border: 0rem;
+  border-radius: 0rem;
+  background: $color-primary;
+  color: $white;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.645,0.045,0.355,1);
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: .9rem;
+  font-weight: bold;
+
+  span {
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    box-shadow: none;
+    background: ($color-primary, 10%);
+    text-decoration: none !important;
+    cursor: pointer !important;
+
+    a {
+      text-decoration: none !important;
+    }
+  }
+}

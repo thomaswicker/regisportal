@@ -1,0 +1,215 @@
+/*
+  _   _ _____ _     ____  _____ ____  ____
+ | | | | ____| |   |  _ \| ____|  _ \/ ___|
+ | |_| |  _| | |   | |_) |  _| | |_) \___ \
+ |  _  | |___| |___|  __/| |___|  _ < ___) |
+ |_| |_|_____|_____|_|   |_____|_| \_\____/
+
+*/
+
+
+ /* ## Float helpers ## */
+.float-left    { float: left !important; }
+.float-right   { float: right !important; }
+.float-none    { float: none !important; }
+
+
+ /* ## Text alignment helpers ## */
+.text-left     { text-align: left  !important; }
+.text-center   { text-align: center!important; }
+.text-right    { text-align: right !important; }
+
+
+ /* ## Font weight helpers ## */
+.font-weight-light      { font-weight: 300!important; }
+.font-weight-normal     { font-weight: 400!important; }
+.font-weight-bold       { font-weight: 600!important; }
+
+.box {
+  border: 1px solid #dddddd;
+  padding: 3rem 2.5rem 3rem 2.5rem;
+}
+
+.box-shadow {
+    padding: 15px 15px 20px 15px;
+    @include box-shadow(0px, 0px, 5px, #dddddd);
+}
+
+ /* ## Border helpers ## */
+.border {
+  // Positions
+  &.top       { border-top-style: solid; }
+  &.right     { border-right-style: solid; }
+  &.bottom    { border-bottom-style: solid; }
+  &.left      { border-left-style: solid; }
+  &.all       { border-style: solid; }
+
+  //thicknesses
+  &.none      { border-width: rem-calc(0); }
+  &.xs        { border-width: rem-calc(1); }
+  &.sm        { border-width: rem-calc(2); }
+  &.md        { border-width: rem-calc(3); }
+  &.lg        { border-width: rem-calc(4); }
+  &.xl        { border-width: rem-calc(5); }
+
+  // Palettes
+  &.dark      { border-color: $dark-gray; }
+  &.medium    { border-color: $medium-gray; }
+  &.light     { border-color: $light-gray; }
+  &.xlight    { border-color: $off-white; }
+}
+
+ /* ## Background helpers ## */
+.bg-color {
+  // Palettes
+  &.bg-dark   { background-color: $dark-gray; }
+  &.bg-medium { background-color: $medium-gray; }
+  &.bg-light  { background-color: $light-gray; }
+  &.bg-xlight { background-color: $off-white; }
+  &.bg-none   { background-color: transparent; }
+  &.bg-white  { background-color: $white; }
+}
+
+/**
+ * Mute an object by reducing its opacity.
+ */
+.muted{
+    opacity:0.5!important;
+    filter:alpha(opacity = 50)!important;
+}
+
+.bg {
+
+  &.none {
+      background-color: $none;
+    }
+
+  &.white {
+    background-color: $white;
+  }
+
+  &.off-white {
+    background-color: $off-white;
+  }
+
+  &.xlight-gray {
+    background-color: $xlight-gray;
+  }
+
+  &.light-gray {
+    background-color: $light-gray;
+  }
+
+  &.medium-gray {
+    background-color: $medium-gray;
+  }
+
+  &.dark-gray {
+    background-color: $dark-gray;
+  }
+
+  &.black {
+    background-color: $black;
+  }
+
+  &.primary {
+    background-color: $color-primary;
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+  }
+
+  &.red-potion {
+    background-color: $red-potion;
+  }
+
+  &.green-potion {
+    background-color: $green-potion;
+  }
+
+  &.blue-potion {
+    background-color: $blue-potion;
+  }
+
+  &.orange-potion {
+    background-color: $orange-potion;
+  }
+
+  &.yellow-potion {
+    background-color: $yellow-potion;
+  }
+
+  &.purple-potion {
+    background-color: $purple-potion;
+  }
+}
+
+.text-color {
+
+  &.none {
+    color: $none;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.off-white {
+    color: $off-white;
+  }
+
+  &.xlight-gray {
+    color: $xlight-gray;
+  }
+
+  &.light-gray {
+    color: $light-gray;
+  }
+
+  &.medium-gray {
+    color: $medium-gray;
+  }
+
+  &.dark-gray {
+    color: $dark-gray;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.primary {
+    color: $color-primary;
+  }
+
+  &.secondary {
+    color: $color-secondary;
+  }
+
+  &.red-potion {
+    color: $red-potion;
+  }
+
+  &.green-potion {
+    color: $green-potion;
+  }
+
+  &.blue-potion {
+    color: $blue-potion;
+  }
+
+  &.orange-potion {
+    color: $orange-potion;
+  }
+
+  &.yellow-potion {
+    color: $yellow-potion;
+  }
+
+  &.purple-potion {
+    color: $purple-potion;
+  }
+}
+
+
